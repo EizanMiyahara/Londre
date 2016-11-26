@@ -27,12 +27,12 @@ public class Frame5 extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
@@ -42,16 +42,14 @@ public class Frame5 extends javax.swing.JFrame {
         jSpinner2 = new javax.swing.JSpinner();
         jButton1 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
         jRadioButton3 = new javax.swing.JRadioButton();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jDateChooser2 = new com.toedter.calendar.JDateChooser();
+        jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -59,7 +57,7 @@ public class Frame5 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Trajan Pro", 0, 24)); // NOI18N
         jLabel1.setText("Form Order");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(21, 20, 170, 32);
+        jLabel1.setBounds(21, 20, 170, 25);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setText("Nama");
@@ -80,8 +78,6 @@ public class Frame5 extends javax.swing.JFrame {
         jLabel5.setText("Hari Pemesanan");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(20, 200, 120, 30);
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(150, 230, 28, 30);
         getContentPane().add(jTextField2);
         jTextField2.setBounds(148, 70, 183, 30);
         getContentPane().add(jTextField3);
@@ -108,24 +104,6 @@ public class Frame5 extends javax.swing.JFrame {
         jButton1.setBounds(251, 352, 80, 30);
         getContentPane().add(jLabel8);
         jLabel8.setBounds(58, 250, 0, 0);
-
-        jLabel9.setText("/");
-        getContentPane().add(jLabel9);
-        jLabel9.setBounds(180, 240, 4, 14);
-
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jTextField5);
-        jTextField5.setBounds(190, 230, 28, 30);
-
-        jLabel10.setText("/");
-        getContentPane().add(jLabel10);
-        jLabel10.setBounds(220, 240, 4, 14);
-        getContentPane().add(jTextField6);
-        jTextField6.setBounds(230, 230, 28, 30);
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel11.setText("Paket");
@@ -157,14 +135,17 @@ public class Frame5 extends javax.swing.JFrame {
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel13.setText("*berat = kg");
         getContentPane().add(jLabel13);
-        jLabel13.setBounds(280, 240, 54, 13);
+        jLabel13.setBounds(60, 180, 54, 13);
+        getContentPane().add(jDateChooser2);
+        jDateChooser2.setBounds(150, 230, 120, 30);
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Lumbalumba edit.jpg"))); // NOI18N
+        jLabel14.setText("jLabel14");
+        getContentPane().add(jLabel14);
+        jLabel14.setBounds(-10, 0, 370, 400);
 
         setBounds(0, 0, 377, 433);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
 
     private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
         // TODO add your handling code here:
@@ -208,11 +189,13 @@ public class Frame5 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private com.toedter.calendar.JDateChooser jDateChooser2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -220,17 +203,13 @@ public class Frame5 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JSpinner jSpinner2;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
     // End of variables declaration//GEN-END:variables
 }

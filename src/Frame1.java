@@ -34,6 +34,7 @@ public class Frame1 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -41,7 +42,7 @@ public class Frame1 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Aller", 0, 36)); // NOI18N
         jLabel1.setText("WELCOME");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(120, 20, 200, 62);
+        jLabel1.setBounds(100, 90, 200, 62);
 
         jButton1.setFont(new java.awt.Font("Adobe Arabic", 0, 14)); // NOI18N
         jButton1.setText("Order yuk!");
@@ -53,10 +54,15 @@ public class Frame1 extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(90, 150, 215, 30);
 
-        jLabel2.setFont(new java.awt.Font("Adobe Arabic", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Adobe Arabic", 1, 18)); // NOI18N
         jLabel2.setText("- Pemana Laundry -");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(120, 90, 190, 40);
+        jLabel2.setBounds(90, 120, 230, 40);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/original_laundry-rolling-shelves-organization_s4x3.jpg.rend.hgtvcom.1280.960.jpeg"))); // NOI18N
+        jLabel3.setText("j");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(-10, 0, 420, 300);
 
         setBounds(0, 0, 416, 339);
     }// </editor-fold>//GEN-END:initComponents
@@ -106,5 +112,6 @@ public class Frame1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

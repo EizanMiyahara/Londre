@@ -42,7 +42,7 @@ public class Frame6 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Trajan Pro", 0, 24)); // NOI18N
         jLabel1.setText("Form Order");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 20, 160, 32);
+        jLabel1.setBounds(10, 20, 220, 25);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel3.setText("Tanggal Pengambilan");

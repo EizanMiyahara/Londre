@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -30,11 +33,12 @@ public class Frame2 extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        username = new javax.swing.JTextField();
-        password = new javax.swing.JTextField();
+        etUsername = new javax.swing.JTextField();
         login = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         create = new javax.swing.JButton();
+        etPassword = new javax.swing.JPasswordField();
+        jLabel6 = new javax.swing.JLabel();
 
         jLabel1.setText("jLabel1");
 
@@ -48,23 +52,28 @@ public class Frame2 extends javax.swing.JFrame {
 
         jLabel3.setText("Username");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(129, 60, 70, 30);
+        jLabel3.setBounds(130, 80, 70, 30);
 
         jLabel4.setText("Password");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(130, 120, 70, 30);
-        getContentPane().add(username);
-        username.setBounds(205, 63, 99, 30);
-        getContentPane().add(password);
-        password.setBounds(205, 120, 99, 30);
+        jLabel4.setBounds(130, 130, 70, 30);
+
+        etUsername.setName("etUsername"); // NOI18N
+        getContentPane().add(etUsername);
+        etUsername.setBounds(200, 80, 99, 30);
 
         login.setText("LOGIN");
+        login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginActionPerformed(evt);
+            }
+        });
         getContentPane().add(login);
         login.setBounds(160, 170, 70, 30);
 
         jLabel5.setText("Daftar?");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(270, 220, 60, 30);
+        jLabel5.setBounds(10, 200, 60, 30);
 
         create.setText("Create");
         create.addActionListener(new java.awt.event.ActionListener() {
@@ -73,7 +82,16 @@ public class Frame2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(create);
-        create.setBounds(320, 218, 70, 30);
+        create.setBounds(10, 220, 70, 30);
+
+        etPassword.setName("etPassword"); // NOI18N
+        getContentPane().add(etPassword);
+        etPassword.setBounds(200, 130, 100, 30);
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/green_wall_window-1366x768.jpg"))); // NOI18N
+        jLabel6.setText("jLabel6");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(-6, -6, 410, 270);
 
         setBounds(0, 0, 416, 298);
     }// </editor-fold>//GEN-END:initComponents
@@ -83,6 +101,24 @@ public class Frame2 extends javax.swing.JFrame {
         new Frame4().setVisible(true);
         dispose();
     }//GEN-LAST:event_createActionPerformed
+
+    private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
+       String name = etUsername.getText().toString();
+       String pass = etPassword.getText().toString();
+     
+       
+       if(name.equals("admin") && pass.equals("admin")){
+           new Frame5().setVisible(true);
+           dispose();
+       }else{
+           JOptionPane.showMessageDialog(null, "Username atau password yang anda masukkan salah silahkan coba lagi","Peringatan",
+                    JOptionPane.INFORMATION_MESSAGE);
+       }
+        
+        
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_loginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -121,13 +157,14 @@ public class Frame2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton create;
+    private javax.swing.JPasswordField etPassword;
+    private javax.swing.JTextField etUsername;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JButton login;
-    private javax.swing.JTextField password;
-    private javax.swing.JTextField username;
     // End of variables declaration//GEN-END:variables
 }
